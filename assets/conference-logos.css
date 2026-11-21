@@ -32,9 +32,9 @@
   object-fit: contain;
 }
 
-/* Normalize the visible capital letters, excluding the MRS boxes and APS orbit. */
+/* Match the MRS box height to the APS/KPS capital-letter height. */
 .conference-logo--mrs {
-  --conference-mark-width: 100.000000%;
+  --conference-mark-width: 51.020408%;
 }
 
 .conference-logo--aps {
