@@ -19,17 +19,30 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 244.64px;
   margin: 0;
-  justify-self: end;
+  justify-self: center;
 }
 
 .conference-logo img {
   display: block;
-  width: 180px;
+  width: var(--conference-mark-width, 100%);
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+/* Normalize the visible capital letters, excluding the MRS boxes and APS orbit. */
+.conference-logo--mrs {
+  --conference-mark-width: 100.000000%;
+}
+
+.conference-logo--aps {
+  --conference-mark-width: 56.240722%;
+}
+
+.conference-logo--kps {
+  --conference-mark-width: 43.679342%;
 }
 
 @media (max-width: 900px) {
